@@ -45,43 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-iter-special-rad2deg
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-iterRad2deg = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-rad2deg@umd/browser.js' )
-```
-The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-iter-special-rad2deg/tags). For example,
-
-```javascript
-iterRad2deg = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-rad2deg@v0.2.1-umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var iterRad2deg = require( 'path/to/vendor/umd/math-iter-special-rad2deg/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-rad2deg@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.iterRad2deg;
-})();
-</script>
+var iterRad2deg = require( '@stdlib/math-iter-special-rad2deg' );
 ```
 
 #### iterRad2deg( iterator )
@@ -133,14 +122,9 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-rad2deg@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var uniform = require( '@stdlib/random-iter-uniform' );
+var iterRad2deg = require( '@stdlib/math-iter-special-rad2deg' );
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = uniform( 0.0, 6.28, {
@@ -160,11 +144,6 @@ while ( true ) {
     }
     console.log( v.value );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -233,8 +212,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/math-iter-special-rad2deg.svg
 [npm-url]: https://npmjs.org/package/@stdlib/math-iter-special-rad2deg
 
-[test-image]: https://github.com/stdlib-js/math-iter-special-rad2deg/actions/workflows/test.yml/badge.svg?branch=v0.2.1
-[test-url]: https://github.com/stdlib-js/math-iter-special-rad2deg/actions/workflows/test.yml?query=branch:v0.2.1
+[test-image]: https://github.com/stdlib-js/math-iter-special-rad2deg/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/math-iter-special-rad2deg/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/math-iter-special-rad2deg/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/math-iter-special-rad2deg?branch=main
@@ -270,9 +249,9 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/rad2deg]: https://github.com/stdlib-js/math-base-special-rad2deg/tree/umd
+[@stdlib/math/base/special/rad2deg]: https://github.com/stdlib-js/math-base-special-rad2deg
 
-[@stdlib/math/iter/special/deg2rad]: https://github.com/stdlib-js/math-iter-special-deg2rad/tree/umd
+[@stdlib/math/iter/special/deg2rad]: https://github.com/stdlib-js/math-iter-special-deg2rad
 
 <!-- </related-links> -->
 
