@@ -33,7 +33,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Create an [iterator][mdn-iterator-protocol] which converts an angle from radians to degrees for each iterated value.
+> Create an [iterator][mdn-iterator-protocol] which [converts][@stdlib/math/base/special/rad2deg] an angle from radians to degrees for each iterated value.
 
 <!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
 
@@ -75,7 +75,7 @@ var iterRad2deg = require( '@stdlib/math-iter-special-rad2deg' );
 
 #### iterRad2deg( iterator )
 
-Returns an [iterator][mdn-iterator-protocol] which iteratively converts an angle from radians to degrees.
+Returns an [iterator][mdn-iterator-protocol] which iteratively [converts][@stdlib/math/base/special/rad2deg] an angle from radians to degrees.
 
 ```javascript
 var array2iterator = require( '@stdlib/array-to-iterator' );
